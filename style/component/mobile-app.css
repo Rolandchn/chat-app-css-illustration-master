@@ -1,0 +1,7 @@
+
+.mobile__app{
+  background-color: var(--clr-light-grayish-violet);
+  
+  border-radius: 10px 10px 35px 35px;
+  padding: 1rem;
+}

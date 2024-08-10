@@ -1,0 +1,44 @@
+.footer{
+  position: absolute;
+
+  height: fit-content;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.footer__description{
+  text-align: center;
+
+  font-size: var(--size-sm);
+  font-weight: 400;
+  color: var(--clr-black);
+}
+
+
+@media (max-width: 1536px){
+
+}
+
+@media (max-width: 1280px){
+    
+}
+
+@media (max-width: 1024px){
+    
+}
+
+@media (max-width: 768px){
+    
+}
+
+@media (max-width: 640px){
+  .footer__description{
+    font-size: var(--size-xs);
+  }
+}
+
+@media (max-width: 475px){
+
+}

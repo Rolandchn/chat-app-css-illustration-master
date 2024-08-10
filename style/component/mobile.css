@@ -1,0 +1,42 @@
+.mobile--container{
+  width: 50%;
+}
+
+.mobile{
+  width: fit-content;
+  margin-left: 23rem;
+}
+
+
+@media (max-width: 1536px){
+  .mobile{
+    margin-left: 10rem;
+  }
+}
+
+@media (max-width: 1280px){
+  .mobile{
+    margin-left: 5rem;
+  }
+}
+
+@media (max-width: 1024px){
+  .mobile{
+    margin-inline: auto;
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 768px){
+  .mobile--container{
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px){
+
+}
+
+@media (max-width: 475px){
+
+}

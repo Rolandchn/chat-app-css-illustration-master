@@ -1,0 +1,136 @@
+:root{
+    /* font */
+    --font-primary: "Rubik", sans-serif;
+
+    /* colors */
+    --clr-pale-violet : hsl(276, 100%, 81%);
+    --clr-moderate-violet: hsl(276, 55%, 52%);
+    --clr-desaturated-dark-violet: hsl(271, 15%, 43%);
+    --clr-grayish-blue: hsl(206, 6%, 79%);
+    --clr-very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --clr-dark-grayish-violet: hsl(270, 7%, 64%);
+
+    --clr-light-magenta: hsl(293, 100%, 63%);
+    --clr-light-violet: hsl(264, 100%, 61%);
+
+    --clr-bubble-receiver: hsl(273, 22%, 90%); /* unknown color in design */
+
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-grayish-violet: hsl(270, 20%, 96%);
+    --clr-very-dark-desaturated-violet: hsl(271, 36%, 24%);
+    --clr-very-light-magenta: hsl(289, 100%, 72%);
+
+    --clr-link: hsl(240, 100%, 50%);
+    --clr-black: hsl(0, 100%, 0%);    
+
+    /* gradient */
+    --gradient-bg1: linear-gradient(20deg, var(--clr-light-violet) 50%, var(--clr-light-magenta));
+    --gradient-chat-header: linear-gradient(to right, var(--clr-light-violet), var(--clr-light-magenta));
+    --gradient-chat-request: linear-gradient(to left, var(--clr-light-violet), var(--clr-light-magenta));
+
+    /* shadow */
+    --shadow-mobile: 0 0 50px hsla(208, 11%, 55%, 0.2);
+    --shadow-chat-bubble: 0 3px 30px hsla(208, 11%, 55%, 0.1); 
+
+    /* size */
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-sm: 0.875rem;
+    --size-base: 1rem;
+    --size-lg: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+body{
+    scroll-behavior: smooth;
+    font-family: var(--font-primary);
+    background-color: var(--clr-white);
+    color: var(--clr-dark-grayish-violet);
+    
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+
+
+}
+
+img,
+picture,
+video,
+canvas,
+svg{
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select{
+    font: inherit;
+}
+
+button{
+    border: none;
+    background: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    letter-spacing: -0.025em;
+    overflow-wrap: break-word;
+}
+
+p{
+	color: var(--clr-dark-grayish-violet);
+  overflow-wrap: break-word;
+}
+
+a{
+	color: var(--clr-link);
+}
+
+strong{
+    color: var(--clr-dark-grayish-violet);
+    font-weight: 900;
+}
+
+button:focus-visible,
+a:focus-visible{
+    outline: solid var(--clr-black);
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: grey;
+    outline: var(--clr-light-grayish-violet);
+}
+

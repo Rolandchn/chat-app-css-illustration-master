@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <meta name="description" content="chat app">
+    <meta name="keywords" content="chat app, booking">
+    <meta name="author" content="Roland">
+
+    <link href="./style/modern-normalize.css" rel="stylesheet">
+    <link href="./style/global.css" rel="stylesheet">
+    
+    <link href="./style/component/background.css" rel="stylesheet">
+    <link href="./style/component/main.css" rel="stylesheet">
+    <link href="./style/component/mobile.css" rel="stylesheet">
+    <link href="./style/component/mobile-border.css" rel="stylesheet">
+    <link href="./style/component/mobile-app.css" rel="stylesheet">
+    <link href="./style/component/mobile-app-chat.css" rel="stylesheet">
+    <link href="./style/component/mobile-app-footer.css" rel="stylesheet">
+    <link href="./style/component/mobile-header.css" rel="stylesheet">
+    <link href="./style/component/footer.css" rel="stylesheet">
+    
+    <link href="./style/component/mobile.css" rel="stylesheet">
+    <link href="./style/component/hero.css" rel="stylesheet">
+    <link href="./style/unit.css" rel="stylesheet">
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <div class="background1"></div>
+  <div class="background2"></div>
+  
+  <main class="container main">
+    <div class="mobile--container">
+      <div class="mobile">
+        <div class="mobile__border">
+          <div class="mobile__border--camera"></div>
+        <div class="mobile__header">
+          <button aria-label="send button">
+            <svg class="mobile__header--arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M7.72 12.53a.75.75 0 0 1 0-1.06l7.5-7.5a.75.75 0 1 1 1.06 1.06L9.31 12l6.97 6.97a.75.75 0 1 1-1.06 1.06l-7.5-7.5Z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <div class="mobile__header--receiver">
+            <img class="mobile__header--receiver-avatar" src="./images/avatar.jpg" alt="user avatar" width="256" height="256">
+          <div>
+              <p class="mobile__header--receiver-name">Samuel Green</p>
+              <p class="mobile__header--receiver-status">Available to Walk</p>
+          </div>
+          </div>
+          <button aria-label="send button">
+            <svg class="mobile__header--ellipse" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 12.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5ZM12 18.75a.75.75 0 1 1 0-1.5.75.75 0 0 1 0 1.5Z" />
+            </svg>
+          </button>
+        </div>
+        <div class="mobile__app">
+          <div class="mobile__app--chat">
+            <div class="mobile__app--chat-receiver-bubble-decoration mobile__app--chat-bubble mobile__app--chat-receiver mobile__app--chat-margin-top0">
+              <p class="mobile__app--chat-text">That sounds great. I’d be happy with that.</p>
+            </div>
+            <div class="mobile__app--chat-receiver-bubble-decoration mobile__app--chat-bubble mobile__app--chat-receiver">
+              <p class="mobile__app--chat-text">Could you send over some pictures of your dog, please?</p>
+            </div>
+      
+            <div class="mobile__app--chat-img-container mobile__app--chat-sender mobile__app--chat-margin-top1-5">
+              <img src="./images/dog-image-1.jpg" alt="dog picture" class="mobile__app--chat-img" width="160" height="160">
+              <img src="./images/dog-image-2.jpg" alt="dog picture" class="mobile__app--chat-img" width="160" height="160">
+              <img src="./images/dog-image-3.jpg" alt="dog picture" class="mobile__app--chat-img" width="160" height="160">
+            </div>
+      
+            <div class="mobile__app--chat-sender-bubble-decoration mobile__app--chat-bubble mobile__app--chat-sender">
+              <p class="mobile__app--chat-text">Here are a few pictures. She’s a happy girl!</p>
+            </div>
+            <div class="mobile__app--chat-sender-bubble-decoration mobile__app--chat-bubble mobile__app--chat-sender">
+              <p class="mobile__app--chat-text">Can you make it?</p>
+            </div>
+
+            <div class="mobile__app--chat-receiver-bubble-decoration mobile__app--chat-bubble mobile__app--chat-receiver mobile__app--chat-margin-top1-5">
+              <p class="mobile__app--chat-text">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+            </div>
+      
+            <label
+            class="mobile__app--chat-request mobile__app--chat-receiver"
+            for="mobile__app--chat-request-30">
+              <input type="checkbox" id="mobile__app--chat-request-30" name="time-request">
+              <span class="mobile__app--chat-request-checkmark"></span>
+              <p class="mobile__app--chat-request-description">
+                <span>30 minute walk</span>
+                <span class="mobile__app--chat-request-price">$29</span>
+              </p>
+            </label>
+            <label
+            class="mobile__app--chat-request mobile__app--chat-receiver"
+            for="mobile__app--chat-request-60">
+              <input type="checkbox" id="mobile__app--chat-request-60" name="time-request">
+              <span class="mobile__app--chat-request-checkmark"></span>
+              <p class="mobile__app--chat-request-description">
+                <span>1 hour walk</span>
+                <span class="mobile__app--chat-request-price">$49</span>
+              </p>
+            </label>
+      
+            </div>
+            <div class="mobile__app--footer">
+              <p class="mobile__app--footer-text">Type a message…</p>
+              <button class="mobile__app--footer-btn" aria-label="send button">
+                <svg class="mobile__app--footer-arrow" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                  <path fill-rule="evenodd" d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          </div>
+      </div>
+    </div>
+    
+    <div class="hero">
+      <h1 class="hero__title">Simple booking</h1>
+      <p class="hero__description">
+        Stay in touch with our dog walkers through the chat interface. This makes it easy to
+        discuss arrangements and make bookings. Once the walk has been completed you can rate
+        your walker and book again all through the chat.
+      </p>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    <p class="footer__description">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Roland</a>.
+    </p>
+  </footer>
+
+</body>
+</html>
